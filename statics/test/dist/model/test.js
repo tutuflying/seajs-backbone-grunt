@@ -1,0 +1,1 @@
+define("apps/test/1.0.0/model/test",["backbone"],function(a,b,c){var d=a("backbone"),e=d.Model.extend({});c.exports=e});

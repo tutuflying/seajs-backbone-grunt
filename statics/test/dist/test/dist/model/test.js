@@ -1,0 +1,1 @@
+define("apps/test/1.0.0/model/test",["/sea-modules/gallery/backbone/1.0.0/backbone.js","gallery/underscore/1.4.4/underscore","$"],function(a,b,c){var d=a("/sea-modules/gallery/backbone/1.0.0/backbone.js"),e=d.Model.extend({});c.exports=e});

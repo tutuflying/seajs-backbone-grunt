@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="val"/>
+	<input type="button" value="add" id="add"/>
+	<ul>
+	</ul>
+
+	<script type="text/javascript" src="../sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+	<script type="text/javascript">
+	// Set configuration
+	  seajs.config({
+	    base: "../sea-modules/",
+	    alias: {
+	      "$": "jquery/jquery/1.10.1/jquery.js",
+	      "underscore": "gallery/underscore/1.4.4/underscore.js",
+	      "backbone": "gallery/backbone/1.0.0/backbone.js",
+	      "mustache": "marketing/mustache/0.7.2/mustache.js"
+	    }
+	  });
+
+	  // For development
+	    // seajs.use("../statics/test/src/main");
+	  // For production
+	    seajs.use("apps/test/1.0.0/main");
+	</script>
+	<script id="testTemplate" type="text/mustache-template">
+		{{name}}
+		<span>delete</span>
+	</script>
+</body>
+</html>
