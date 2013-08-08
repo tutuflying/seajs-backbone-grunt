@@ -59,11 +59,21 @@ module.exports = function (grunt) {
             }
         },
         clean : {
-            spm : ['.build']
+            spm : ['.build', 'dist']
         },
         copy : {
             test : {
-                files: [{src: ['dist/main.js'], dest: '../../sea-modules/apps/test/1.0.0/main.js'}, {src: ['dist/main-debug.js'], dest: '../../sea-modules/apps/test/1.0.0/main-debug.js'}]
+                options : {
+                    include : 'all'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist/',
+                        src: ['**/*.js', '!**/*-debug.js'],
+                        dest: '../../sea-modules/apps/test/1.0.0/'
+                    }
+                ]
             }
         }
     });

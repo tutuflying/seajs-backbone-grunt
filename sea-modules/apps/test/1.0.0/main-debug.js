@@ -1,4 +1,5 @@
 define("apps/test/1.0.0/main-debug", [ "./view/app-debug", "$-debug", "underscore-debug", "mustache-debug", "backbone-debug", "./collection/test-debug", "./model/test-debug", "./view/test-debug" ], function(require, exports, module) {
+    require("./style/css/test-debug.css");
     var App = require("./view/app-debug");
     var app = new App();
 });

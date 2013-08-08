@@ -33,6 +33,7 @@ define(function(require, exports, module){
 				return;
 			}
 			collection.add({name : val});
+			$("#val").val("");
 		}
 	});
 
